@@ -26,16 +26,29 @@ const numberCalculate = num => {
         
     }
     const totalLength = arrNumber.length
-    console.log(totalLength);
+    //console.log(totalLength);
     
-    console.log(squrElemnt);
+    //console.log(squrElemnt);
     let sum = 0;
     for(const x of squrElemnt){
         sum = sum + x;
     }
-    console.log(sum);
+    //console.log(sum);
     const averageOfSqire = sum / totalLength;
-    console.log(averageOfSqire);
+    //console.log(averageOfSqire);
+    return squrElemnt;
 }
-numberCalculate(arrNumber);
+
+const squrElemnts = numberCalculate(arrNumber);
+console.log(squrElemnts);
+
+
+const twoArray = (arr1, arr2) => {
+    const arryOne =  arr1;
+    const arryTwo = arr2;
+    const newArry = [...arryOne, ...arryTwo];
+    const maximum =  Math.max(...newArry)
+    return maximum;
+}
+console.log(twoArray(arrNumber,squrElemnts ));
 
