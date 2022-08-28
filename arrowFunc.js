@@ -41,3 +41,6 @@ console.log(result4);
 const arr = [56,3,56,3,5,77,332,78];
 const max = Math.max(...arr);
 console.log(max);
+
+const arr2 = [...arr, 77];
+console.log(arr2);
