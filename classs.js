@@ -14,3 +14,7 @@ class Instructor{
 const amir = new Instructor('ASmir', 'Dhaka');
 console.log(amir);
 amir.supportSession('9:00');
+
+
+
+// all ok
